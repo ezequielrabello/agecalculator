@@ -82,6 +82,10 @@ function calcYear(year, month, day) {
         daysOld = currentDay - day.value
     }
 
+    if (currentDay <= day.value) {
+        daysOld = day.value - currentDay
+    }
+
 
     res_year.innerHTML = yearsOld
     res_month.innerHTML = monthsOld
